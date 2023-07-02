@@ -1,7 +1,17 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
-
+@font-face {
+  font-family: "railwaybold";   /*Can be any text*/
+  src: local("railwaybold"),
+    url("../public/fonts/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "railwaylight";   /*Can be any text*/
+  src: local("railwaylight"),
+    url("../public/fonts/Raleway-Light.ttf") format("truetype");
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

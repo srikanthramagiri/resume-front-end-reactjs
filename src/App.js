@@ -1,6 +1,6 @@
 import React from 'react'
 import Index from './main-page/index'
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
