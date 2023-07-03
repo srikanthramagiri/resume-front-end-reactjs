@@ -1,16 +1,43 @@
-import React from "react";
-import './navigationbar.scss'
+import React, { useState } from "react";
+import "./navigationbar.scss";
 import { AiOutlineHome } from "react-icons/ai";
-import { BiUser,BiFileBlank } from "react-icons/bi"
-import { MdWorkOutline, MdOutlineHomeRepairService } from "react-icons/md"
-import { LuFileSpreadsheet } from "react-icons/lu"
-import { AiOutlineMail } from "react-icons/ai"
+import { BiUser, BiFileBlank } from "react-icons/bi";
+import { MdWorkOutline, MdOutlineHomeRepairService } from "react-icons/md";
+import { LuFileSpreadsheet } from "react-icons/lu";
+import { AiOutlineMail, AiOutlineCloseCircle } from "react-icons/ai";
+import { PiListLight } from "react-icons/pi";
+import { Container, Row, Button } from "react-bootstrap";
 
 const Navigationbar = () => {
+  const [listClicked, setListClicked] = useState(true);
+  const [showLeftNav, setShowLeftNav] = useState("");
   return (
     <div>
-      <i className="bi bi-list mobile-nav-toggle d-lg-none"></i>
-      <header id="header" className="d-flex flex-column justify-content-center">
+      <div className="list-icon-section">
+        {listClicked && (
+          <PiListLight
+            className="list-icon"
+            onClick={() => {
+              setListClicked(!listClicked);
+              setShowLeftNav("showLeftNav");
+            }}
+          />
+        )}
+        {!listClicked && (
+          <AiOutlineCloseCircle
+            className="close-icon"
+            onClick={() => {
+              setListClicked(!listClicked);
+              setShowLeftNav("");
+            }}
+          />
+        )}
+      </div>
+
+      <header
+        id="header"
+        className={`d-flex flex-column justify-content-center ${showLeftNav}`}
+      >
         <nav id="navbar" class="navbar nav-menu">
           <ul>
             <li>
@@ -20,7 +47,8 @@ const Navigationbar = () => {
             </li>
             <li>
               <a href="#about" class="nav-link scrollto">
-                <BiUser /><span>About</span>
+                <BiUser />
+                <span>About</span>
               </a>
             </li>
             <li>
@@ -30,7 +58,8 @@ const Navigationbar = () => {
             </li>
             <li>
               <a href="#portfolio" class="nav-link scrollto">
-                <LuFileSpreadsheet /><span>Portfolio</span>
+                <LuFileSpreadsheet />
+                <span>Portfolio</span>
               </a>
             </li>
             <li>
@@ -40,7 +69,8 @@ const Navigationbar = () => {
             </li>
             <li>
               <a href="#contact" class="nav-link scrollto">
-                <AiOutlineMail /><span>Contact</span>
+                <AiOutlineMail />
+                <span>Contact</span>
               </a>
             </li>
           </ul>
