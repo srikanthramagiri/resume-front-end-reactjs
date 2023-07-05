@@ -1,6 +1,12 @@
 import React from "react";
 import "./hero.scss";
 import { TypeAnimation } from "react-type-animation";
+import {
+  AiFillTwitterCircle,
+  AiFillFacebook,
+  AiOutlineInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
 
 const Hero = () => {
   return (
@@ -26,23 +32,20 @@ const Hero = () => {
                 repeat={Infinity}
               />
             </p>
-            {/* <div class="social-links">
-            <a href="#" class="twitter">
-              <i class="bx bxl-twitter"></i>
-            </a>
-            <a href="#" class="facebook">
-              <i class="bx bxl-facebook"></i>
-            </a>
-            <a href="#" class="instagram">
-              <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="#" class="google-plus">
-              <i class="bx bxl-skype"></i>
-            </a>
-            <a href="#" class="linkedin">
-              <i class="bx bxl-linkedin"></i>
-            </a>
-          </div> */}
+            <div class="social-links">
+              <a href="#" class="twitter">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="#" class="facebook">
+                <AiFillFacebook />
+              </a>
+              <a href="#" class="instagram">
+                <AiOutlineInstagram />
+              </a>
+              <a href="#" class="google-plus">
+                <AiFillLinkedin />
+              </a>
+            </div>
           </div>
         </div>
       </section>

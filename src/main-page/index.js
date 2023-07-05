@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
 import Navigationbar from "./components/navigationbar/Navigationbar";
 
 const Index = () => {
@@ -10,7 +11,7 @@ const Index = () => {
       <main id="main">
         <section id="about" class="about">
           <div class="container" data-aos="fade-up">
-            <div class="section-title">
+            {/* <div class="section-title">
               <h2>About</h2>
               <p>
                 Magnam dolores commodi suscipit. Necessitatibus eius consequatur
@@ -18,7 +19,8 @@ const Index = () => {
                 quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
                 Quia fugiat sit in iste officiis commodi quidem hic quas.
               </p>
-            </div>
+            </div> */}
+            <About />
 
             <div class="row">
               <div class="col-lg-4">

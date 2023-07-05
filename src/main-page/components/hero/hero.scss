@@ -5,6 +5,19 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  .social-links {
+    a {
+      font-size: 24px;
+      display: inline-block;
+      color: #45505b;
+      line-height: 1;
+      margin-right: 20px;
+      transition: 0.3s;
+      :hover {
+        color: #0563bb;
+      }
+    }
+  }
   .whiteoverlay {
     background: rgba(255, 255, 255, 0.82);
     overflow: hidden;
@@ -19,8 +32,8 @@
   }
   .name-section {
     position: absolute;
-    top: 50%;
-    left: 34%;
+    top: 34%;
+    left: 15%;
   }
 }
 .name {
