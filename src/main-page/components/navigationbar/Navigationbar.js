@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navigationbar.scss";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiUser, BiFileBlank } from "react-icons/bi";
@@ -11,8 +11,20 @@ import { Container, Row, Button } from "react-bootstrap";
 const Navigationbar = () => {
   const [listClicked, setListClicked] = useState(true);
   const [showLeftNav, setShowLeftNav] = useState("");
+  useEffect(()=>{
+    if(!listClicked) {
+      document.body.style.overflow = 'hidden';
+    }
+    else {
+      document.body.style.overflow = 'visible';
+    }
+  }, [listClicked])
+  const onNavClickHandler = () => {
+    setShowLeftNav("");
+    setListClicked(!listClicked)
+  }
   return (
-    <div>
+    <div >
       <div className="list-icon-section">
         {listClicked && (
           <PiListLight
@@ -20,6 +32,7 @@ const Navigationbar = () => {
             onClick={() => {
               setListClicked(!listClicked);
               setShowLeftNav("showLeftNav");
+            
             }}
           />
         )}
@@ -29,6 +42,7 @@ const Navigationbar = () => {
             onClick={() => {
               setListClicked(!listClicked);
               setShowLeftNav("");
+          
             }}
           />
         )}
@@ -41,34 +55,34 @@ const Navigationbar = () => {
         <nav id="navbar" class="navbar nav-menu">
           <ul>
             <li>
-              <a href="#hero" class="nav-link scrollto active">
+              <a href="#hero" onClick={() => { onNavClickHandler()}} class="nav-link scrollto active">
                 <AiOutlineHome /> <span>Home</span>
               </a>
             </li>
             <li>
-              <a href="#about" class="nav-link scrollto">
+              <a href="#about" class="nav-link scrollto" onClick={() => { onNavClickHandler()}}>
                 <BiUser />
                 <span>About</span>
               </a>
             </li>
             <li>
-              <a href="#resume" class="nav-link scrollto">
+              <a href="#resume" class="nav-link scrollto" onClick={() => { onNavClickHandler()}}>
                 <MdWorkOutline /> <span>Resume</span>
               </a>
             </li>
             <li>
-              <a href="#portfolio" class="nav-link scrollto">
+              <a href="#portfolio" class="nav-link scrollto" onClick={() => { onNavClickHandler()}}>
                 <LuFileSpreadsheet />
                 <span>Portfolio</span>
               </a>
             </li>
             <li>
-              <a href="#services" class="nav-link scrollto">
+              <a href="#services" class="nav-link scrollto" onClick={() => { onNavClickHandler()}}>
                 <MdOutlineHomeRepairService /> <span>Services</span>
               </a>
             </li>
             <li>
-              <a href="#contact" class="nav-link scrollto">
+              <a href="#contact" class="nav-link scrollto"  onClick={() => { onNavClickHandler()}}>
                 <AiOutlineMail />
                 <span>Contact</span>
               </a>

@@ -1,3 +1,14 @@
+.blackbackground {
+  background-color: 'rgba(0, 0, 0, 0.5)';
+  height : '100vh';
+  width: '100vw';
+}
+.list-icon-section {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
 header {
   position: fixed;
   top: 0;
@@ -10,6 +21,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .nav-menu {
     margin: 0;
     padding: 0;
@@ -117,6 +129,12 @@ header {
     right: 16px;
     top: 16px;
     z-index: 99;
+  }
+  nav {
+    width: 100%;
+    ul {
+      width: 100%;
+    }
   }
 }
 @media (min-width: 992px) {

@@ -1,0 +1,33 @@
+.about {
+    .whiteoverlay {
+        background: rgb(255 255 255 / 56%);
+        overflow: hidden;
+        height: 100%;
+        z-index: 2;
+      }
+    .about-img {
+        background-image: url(../../../images/srikanth1.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 100%;
+        z-index: -2;
+    }
+    ul {
+        li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            span {
+                padding-left: 10px;
+            }
+            .chevronright {
+                font-size: 16px;
+                margin-right: 5px;
+                color: #0563bb;
+                line-height: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.progressbar {
+    .progress-bar {
+       
+        transition: 0.9s;
+        background-color: #0563bb;
+    }
+   
+}
+.progress {
+    .progress-label {
+        padding: 10px 0;
+        margin: 0;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #45505b;
+    }
+}
