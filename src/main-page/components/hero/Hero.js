@@ -33,16 +33,16 @@ const Hero = () => {
               />
             </p>
             <div class="social-links">
-              <a href="#" class="twitter">
+              <a href="https://twitter.com/ramagirisr95992" class="twitter">
                 <AiFillTwitterCircle />
               </a>
-              <a href="#" class="facebook">
+              <a href="https://www.facebook.com/ramagiri.sreekanth/" class="facebook">
                 <AiFillFacebook />
               </a>
-              <a href="#" class="instagram">
+              <a href="https://www.instagram.com/srikant_5/" class="instagram">
                 <AiOutlineInstagram />
               </a>
-              <a href="#" class="google-plus">
+              <a href="https://www.linkedin.com/in/srikanth-ramagiri-903193a1" class="google-plus">
                 <AiFillLinkedin />
               </a>
             </div>

@@ -1,0 +1,55 @@
+.stepper-title {
+    text-align: left;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}
+.stepper-item {
+    text-align: left;
+    position: relative;
+    padding-left: 13px;
+    padding: 0 0 0px 20px;
+ 
+    border-left: 2px solid #0563bb;
+    position: relative;
+    &:before {
+        content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #0563bb;
+    }
+    h4 {
+        line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #0563bb;
+    margin-bottom: 10px;
+    text-align: left;
+    }
+    ul {
+        padding-left: 12px;
+        display: block;
+        margin-bottom: 0;
+        li {
+            margin-bottom: 3px;
+        }
+    }
+    .year {
+        font-size: 16px;
+        background: #f7f8f9;
+        font-style: italic;
+        padding: 5px 15px;
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
