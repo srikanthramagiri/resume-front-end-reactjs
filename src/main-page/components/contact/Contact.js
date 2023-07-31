@@ -22,7 +22,7 @@ const Contact = () => {
               <div>
                 <h4 className="left-item-heading">Location:</h4>
                 <p className="location-content">
-                  A108 Adam Street, New York, NY 535022
+                  912 North charles st, Apt 70 Macomb Il 61455
                 </p>
               </div>
             </div>
@@ -35,7 +35,7 @@ const Contact = () => {
               <div>
                 <h4 className="left-item-heading">Email</h4>
                 <p className="location-content">
-                  A108 Adam Street, New York, NY 535022
+                  srikanthramagiri5@gmail.com 
                 </p>
               </div>
             </div>

@@ -23,10 +23,10 @@ const Resume = () => {
       <div className="resume">
         <Row>
           <Heading heading={"Resume"} />
-          <Col>
+          <Col lg={6} sm={12} xs={12}>
             <StepperComponent stepBlocks={stepBlocks} />
           </Col>
-          <Col>
+          <Col lg={6} sm={12} xs={12}>
             <StepperComponent stepBlocks={stepBlocks} />
           </Col>
         </Row>
