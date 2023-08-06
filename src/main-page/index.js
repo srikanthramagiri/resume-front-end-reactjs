@@ -17,7 +17,7 @@ const Index = () => {
       <Navigationbar />
       <Hero />
       <main id="main">
-        <section id="about" class="about">
+        <section id="about" class="">
           <div class="container" data-aos="fade-up">
             <About />
             <PersonalDetailSection />

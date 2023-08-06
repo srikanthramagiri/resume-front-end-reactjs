@@ -11,11 +11,9 @@ const getStepBlocs = (stepBlocks) => {
           <h5 className="year">
             {item.fromYear} - {item.toyear}
           </h5>
-          <p>{item.content}</p>
+          <p><b>Client: {item.content}</b></p>
           <ul>
-            <li>Portland par 127,Orlando, FL</li>
-            <li>Portland par 127,Orlando, FL</li>
-            <li>Portland par 127,Orlando, FL</li>
+             {getPoints(item.points)}
           </ul>
         </div>
       </>
@@ -23,10 +21,17 @@ const getStepBlocs = (stepBlocks) => {
   });
   return block;
 };
+const getPoints = ( points) =>{
+  return (
+    points.map(item=>{
+      return(<li>{item}</li>)
+    })
+  )
+}
 
 const StepperComponent = ({ stepBlocks }) => {
   return (<>
-   <h3 className="stepper-title">{"resume title"}</h3>
+   
   {getStepBlocs(stepBlocks)}
   </>);
 };

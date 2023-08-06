@@ -16,7 +16,7 @@ const Hero = () => {
           <div class="name-section" data-aos="zoom-in" data-aos-delay="100">
             <span className="name">Srikanth Ramagiri</span>
             <p>
-              I'm{" "}
+              I'm a{" "}
               <TypeAnimation
                 sequence={[
                   "Front End Developer",

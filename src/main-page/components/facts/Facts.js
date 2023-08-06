@@ -5,11 +5,14 @@ import Content from "../content/Content";
 import { Col, Row } from "react-bootstrap";
 import CountUp from "react-countup";
 import { FaLaptopCode } from "react-icons/fa";
+import { MdOutlineHandshake } from "react-icons/md"
+import { LuClock4 } from "react-icons/lu"
+import { GoOrganization } from "react-icons/go"
 import "./facts.scss";
 
 const heading = "Facts";
 const text =
-  " Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.";
+  "";
 const Facts = () => {
   return (
     <>
@@ -23,9 +26,11 @@ const Facts = () => {
           <Col lg={3} md={3} sm={6} xs={6}>
             <div className="factsIconSection">
               <div className="factsIconDiv">
-                <FaLaptopCode />
+                <GoOrganization />
+                
               </div>
-              <CountUp end={14} className="countup"></CountUp>
+              <div> Organizations</div>
+              <CountUp end={3} className="countup"></CountUp>
             </div>
           </Col>
           <Col lg={3} md={3} sm={6} xs={6}>
@@ -33,22 +38,25 @@ const Facts = () => {
               <div className="factsIconDiv">
                 <FaLaptopCode />
               </div>
+              <div>Projects</div>
               <CountUp end={8} className="countup"></CountUp>
             </div>
           </Col>
           <Col lg={3} md={3} sm={6} xs={6}>
             <div className="factsIconSection">
               <div className="factsIconDiv">
-                <FaLaptopCode />
+                <LuClock4 />
               </div>
+              <div>Time Spent hrs.</div>
               <CountUp end={14560} className="countup"></CountUp>
             </div>
           </Col>
           <Col lg={3} md={3} sm={6} xs={6}>
             <div className="factsIconSection">
               <div className="factsIconDiv">
-                <FaLaptopCode />
+                <MdOutlineHandshake />
               </div>
+              <div>Clients</div>
               <CountUp end={4} className="countup"></CountUp>
             </div>
           </Col>

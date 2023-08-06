@@ -16,11 +16,12 @@ const PersonalDetailSection = () => {
             </div>
             </Col>
             <Col lg={8}>
-            <Subheading text={'UI/UX Designer & Web Developer.'} />
-                <p class="fst-italic">
+
+            <Subheading text={'Personal Details'} />
+                {/* <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                </p> */}
                 <Row>
                     <Col lg={6}>
                     <ul>
@@ -30,11 +31,11 @@ const PersonalDetailSection = () => {
                       </li>
                       <li>
                       <BsChevronRight className='chevronright'/>
-                        <strong>Website:</strong> <span>www.example.com</span>
+                        <strong>Sex:</strong> <span>Male</span>
                       </li>
                       <li>
                       <BsChevronRight className='chevronright'/>
-                        <strong>Phone:</strong> <span>3098688783</span>
+                        <strong>Phone:</strong> <span>+1 3098688783</span>
                       </li>
                       <li>
                       <BsChevronRight className='chevronright'/>
@@ -46,7 +47,7 @@ const PersonalDetailSection = () => {
                     <ul>
                       <li>
                       <BsChevronRight className='chevronright'/>
-                        <strong>Age:</strong> <span>29</span>
+                        <strong>Languages:</strong> <span>English, Telugu, Hindi.</span>
                       </li>
                       <li>
                       <BsChevronRight className='chevronright'/>
@@ -64,7 +65,7 @@ const PersonalDetailSection = () => {
                     </ul>
                     </Col>
                 </Row>
-                <p>
+                {/* <p>
                   Officiis eligendi itaque labore et dolorum mollitia officiis
                   optio vero. Quisquam sunt adipisci omnis et ut. Nulla
                   accusantium dolor incidunt officia tempore. Et eius omnis.
@@ -72,7 +73,7 @@ const PersonalDetailSection = () => {
                   consectetur qui quia repellendus itaque neque. Aliquid amet
                   quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
                   culpa magni laudantium dolores.
-                </p>
+                </p> */}
             </Col>
         </Row>
         </div>

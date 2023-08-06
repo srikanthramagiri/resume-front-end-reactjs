@@ -7,13 +7,13 @@ import ProgressBarComponent from "../common/progress-bar/ProgressBarComponent";
 
 const heading = "SKILLS";
 const text =
-  "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.";
+  "Following are the skills i worked on and profeciency ";
 const Skills = () => {
   return (
     <>
       <Row>
         <Heading heading={heading} />
-        <Content text={text} />
+        {/* <Content text={text} /> */}
         <Row>
           <Col lg={6} md={6} sm={12} xs={12}>
             <ProgressBarComponent label={"HTML"} number={90} />

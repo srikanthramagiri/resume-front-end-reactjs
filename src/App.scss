@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: sans-serif;
+  font-family: railwaylight;
 }
 @font-face {
   font-family: "railwaybold"; /*Can be any text*/
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "railwaylight"; /*Can be any text*/
   src: local("railwaylight"),
-    url("../public/fonts/Raleway-Light.ttf") format("truetype");
+    url("../public/fonts/Raleway-Medium.ttf") format("truetype");
 }
 .App-logo {
   height: 40vmin;

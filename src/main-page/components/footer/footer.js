@@ -10,7 +10,7 @@ const Footer = () => {
         <Container>
             <Row>
                 <h3>Srikanth Ramagiri</h3>
-                <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+                <p> I hereby declare that the above-mentioned information is true to the best of my knowledge.</p>
                 <div className="copy-right">
                 © Copyright
                 <strong> MyResume</strong>
