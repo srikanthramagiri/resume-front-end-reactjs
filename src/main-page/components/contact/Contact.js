@@ -47,7 +47,8 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="left-item-heading">Phone</h4>
-                <p className="location-content">+1 3098688783</p>
+                <p className="location-content">+1 3092520253
+                </p>
               </div>
             </div>
           </Col>
