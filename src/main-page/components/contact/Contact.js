@@ -22,7 +22,7 @@ const Contact = () => {
               <div>
                 <h4 className="left-item-heading">Location:</h4>
                 <p className="location-content">
-                  912 North charles st, Apt 70 Macomb Il 61455
+                  920 North charles st, Apt 104 Macomb Il 61455
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="left-item-heading">Phone</h4>
-                <p className="location-content">+1 3092520253
+                <p className="location-content">+1 3092521404
                 </p>
               </div>
             </div>

@@ -35,7 +35,7 @@ const PersonalDetailSection = () => {
                       </li>
                       <li>
                       <BsChevronRight className='chevronright'/>
-                        <strong>Phone:</strong> <span>+1 3092520253</span>
+                        <strong>Phone:</strong> <span>+1 3092521404</span>
                       </li>
                       <li>
                       <BsChevronRight className='chevronright'/>

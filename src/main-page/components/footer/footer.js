@@ -11,6 +11,7 @@ const Footer = () => {
             <Row>
                 <h3>Srikanth Ramagiri</h3>
                 <p> I hereby declare that the above-mentioned information is true to the best of my knowledge.</p>
+                <p> This application created using by React js, html, css and bootstrap.</p>
                 <div className="copy-right">
                 © Copyright
                 <strong> MyResume</strong>
